@@ -1,0 +1,10 @@
+[Unit]
+Description=Run BME280 script every 1 minute
+
+[Timer]
+OnBootSec=30
+OnUnitActiveSec=60
+Unit=mqttsensor.service
+
+[Install]
+WantedBy=timers.target
