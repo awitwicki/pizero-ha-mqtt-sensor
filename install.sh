@@ -48,8 +48,8 @@ cp mqttsensor.timer /etc/systemd/system/mqttsensor.timer
 
 systemctl daemon-reload
 systemctl enable mqttsensor.service
-sudo systemctl enable mqttsensor.timer
-sudo systemctl start mqttsensor.timer
+systemctl enable mqttsensor.timer
+systemctl start mqttsensor.timer
 
 echo "Service installed and started successfully."
 echo "To check the status of the service, use: systemctl status mqttsensor.service"

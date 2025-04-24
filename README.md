@@ -11,8 +11,13 @@ Raspberry pi based mqtt sensor for Home Asistant
 ## Install software
 
 1. Git clone this repo
-2. Run install.sh script (sudo required)
+2. Run `./install.sh` script (sudo required)
 3. Configure Home Asistant
+
+## (Optional) Uninstall
+
+1. Run `./uninstall-service.sh` script (sudo required)
+2. Remove entire folder
 
 ## Configuring Home Asistant
 
