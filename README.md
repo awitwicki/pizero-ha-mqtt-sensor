@@ -14,7 +14,22 @@ Tested on:
 1. Connect BME280 sensor to i2c pins
 2. Connect MH-Z19 sensor to GPIO17
 
- TODO: image pinout + table
+<img  src=".github/wiring.jpg">
+<img  src=".github/rpi.png">
+
+| Raspberry Pi | MH-Z19 |
+|--|--|
+|  GPIO 17 | PWM |
+|  Ground| GND|
+| 5V power | VIN|
+
+| Raspberry Pi | BME280 |
+|--|--|
+|  3.3V | VCC |
+|  Ground| GND|
+| SCL (GPIO 2) | SCL|
+| SDA (GPIO 3) | SDA |
+
 
 ## Install software
 
