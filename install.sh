@@ -12,9 +12,9 @@ rebuild_env_file() {
     # Create .env file
     echo "Creating .env file..."
     {
-    echo "MQTT_BROKER_IP=$ip_address"
-    echo "MQTT_BROKER_LOGIN=$login"
-    echo "MQTT_BROKER_PASSWORD=$password"
+    echo "MQTT_IP=$ip_address"
+    echo "MQTT_USER=$login"
+    echo "MQTT_PASSWORD=$password"
     } > .env
     echo ".env file created successfully."
 }
