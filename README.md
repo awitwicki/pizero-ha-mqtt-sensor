@@ -1,6 +1,14 @@
 # pizero-ha-mqtt-sensor
 Raspberry pi based mqtt sensor for Home Asistant
 
+Tested on:
+    
+    Raspberry Pi Zero
+    Raspbian GNU/Linux 12 (bookworm)
+    Debian: 12.8
+    Kernel: Linux 6.6.51+rpt-rpi-v6
+    24.04.2025
+
 ## Prepare hardware
 
 1. Connect BME280 sensor to i2c pins
