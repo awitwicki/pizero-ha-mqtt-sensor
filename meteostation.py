@@ -1,5 +1,4 @@
 import os
-from pathlib import Path
 
 import paho.mqtt.client as mqtt
 from dotenv import load_dotenv
@@ -7,8 +6,8 @@ from dotenv import load_dotenv
 import bme
 import mh_z19
 
-env_path = Path(__file__).parent / ".env"
-load_dotenv(dotenv_path=env_path)
+
+load_dotenv(dotenv_path=".env")
 
 MQTT_IP = os.getenv("MQTT_IP")
 MQTT_USER = os.getenv("MQTT_USER")
