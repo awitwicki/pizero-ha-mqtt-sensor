@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Check if .env file already exists
-if [ -f .env ]; then
-  echo ".env file already exists. Do you want to overwrite it? (y/n)"
-  read -r overwrite
-  if [ "$overwrite" == "y" ]; then
+rebuild_env_file() {
     # Ask for ip address, login, password and save them to .env file
     echo "Please enter the IP address of the MQTT broker:"
     read -r ip_address
@@ -21,8 +17,20 @@ if [ -f .env ]; then
     echo "MQTT_BROKER_PASSWORD=$password"
     } > .env
     echo ".env file created successfully."
+}
+
+# Check if .env file already exists
+if [ -f .env ]; then
+    echo ".env file already exists. Do you want to overwrite it? (y/n)"
+    read -r overwrite
+    if [ "$overwrite" == "y" ]; then
+        rebuild_env_file
     fi
+else
+    rebuild_env_file
 fi
+
+
 
 # Install dependencies
 echo "Installing dependencies..."
